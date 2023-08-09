@@ -1,0 +1,150 @@
+html,
+body,
+form {
+  margin: 0;
+  padding: 0;
+}
+
+#wrap {
+  text-align: center;
+}
+
+#wrap-center {
+  width: 1200px;
+  display: inline-block;
+}
+
+#header {
+  display: flex;
+}
+#header-title {
+  text-align: left;
+  width: 100%;
+  margin-top: 23px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+#member-box {
+  padding: 5px;
+  width: 100%;
+  text-align: right;
+}
+
+#member {
+  padding: 5px;
+  position: relative;
+  top: 80px;
+}
+
+#login {
+  right: 42px;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+#join {
+  right: -10px;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+#main {
+  display: flex;
+  margin-top: 10px;
+  height: auto;
+  border-top: 1px solid #dadada;
+  border-bottom: 1px solid #dadada;
+}
+
+#sidemain {
+  width: 10%;
+  border-right: 1px solid #dadada;
+}
+
+.btn-group-vertical {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  float: right;
+  margin-top: 20px;
+}
+
+#realmain {
+  width: 90%;
+}
+
+#footer {
+  padding: 10px;
+  text-align: center;
+}
+
+.blind {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+
+#book {
+  display: grid;
+  position: relative;
+}
+
+.test {
+  width: 400px;
+  height: 500px;
+  border: 1px solid slategrey;
+  margin: 30px;
+  margin-bottom: 60px;
+  border-radius: 10px;
+}
+
+#book button {
+  margin: 10px;
+  width: 90px;
+  height: 35px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  background-color: #009aff;
+  position: absolute;
+  bottom: 0%;
+  left: 38%;
+}
+
+.productbtn button {
+  border-radius: 5px;
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+  padding: 0;
+  border: 1px solid #0083da;
+  color: #fff;
+  background-color: #009aff;
+}
+
+button:hover {
+  background-color: #006bd5;
+  color: #fff;
+  border: 1px solid slategray;
+  border-radius: 5px;
+}
+
+span {
+  vertical-align: middle;
+}
+
+svg {
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+}
+
+.shareimg {
+  width: 15px;
+  height: 15px;
+}
