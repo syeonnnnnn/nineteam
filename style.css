@@ -3,19 +3,19 @@ html, body, form {
   padding: 0;
 }
 
-#wrap {
+.wrap {
   text-align: center;
 }
 
-#wrap-center {
+.wrap-center {
   width: 1200px;
   display: inline-block;
 }
 
-#header {
+.header {
   display: flex;
 }
-#header-title {
+.header-title {
   text-align: left;
   width: 100%;
   margin-top: 23px;
@@ -23,33 +23,33 @@ html, body, form {
   cursor: pointer;
 }
 
-#member-box {
+.member-box {
   padding: 5px;
   width: 100%;
   text-align: right;
 }
 
-#member{
+.member{
   padding: 5px;
   position:relative;
   top:80px;
 }
 
-#login {
+.login {
   right: 42px;
   cursor: pointer;
   text-decoration: none;
   color: black;
 }
 
-#join {
+.join {
   right: -10px;
   cursor: pointer;
   text-decoration: none;
   color: black;
 }
 
-#main {
+.main {
   display: flex;
   margin-top: 10px;
   height: auto;
@@ -57,32 +57,22 @@ html, body, form {
   border-bottom:1px solid #dadada;;
 }
 
-#sidemain {
+.sidemain {
   width:10%;
   border-right:1px solid #dadada;;
 }
 
-.btn-group-vertical {
+.choosebtn {
+  display: inline-block;
   writing-mode: vertical-rl;
   text-orientation: upright;
-  float: right;
-  margin-top: 20px;
 }
 
-#realmain {
+.realmain {
   width:90%;
 }
 
-#footer {
+.footer {
   padding: 10px;
   text-align: center;
 }
-
-.blind {
-  position: absolute;
-  clip: rect(0,0,0,0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-} 
