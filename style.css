@@ -134,6 +134,13 @@ button:hover {
   border-radius: 5px;
 }
 
+#book button:hover {
+  background-color: #006bd5;
+  color: #fff;
+  border: 1px solid slategray;
+  border-radius: 5px;
+}
+
 span {
   vertical-align: middle;
 }
