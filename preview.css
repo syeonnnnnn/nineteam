@@ -1,0 +1,139 @@
+html, body, form {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nanum Gothic Coding', monospace;
+}
+
+.wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.preview-top {
+  display: flex;
+  width: 1164px;
+  height: 80px;
+  background-color: #4967FD;
+}
+
+.booktitle {
+  display: inline-block;
+  font-family: 'Anton', sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+  text-align: left;
+  color: #fff;
+  width: 100%;
+  margin-top: 23px;
+  margin-left: 40px;
+}
+.outbtn {
+  width: 60px;
+  height:60px;
+  border: none;
+  border-radius: 100%;
+  background-color: #fff;
+  display: inline-block;
+  text-align: center;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+.outbtn:hover {
+  background-color: #d7deff;
+  cursor: pointer;
+}
+
+.outbtn svg {
+  width: 35px;
+  height: 35px;
+}
+
+.content {
+  width: 1164px;
+  height: 530px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bookcontent img{ 
+  width: 900px;
+  height: 500px;
+  border: 6px solid #4967FD;
+  margin: 15px;
+  border-radius: 10px;
+}
+
+/* .markwrap {
+  position: relative;
+}
+
+.bookmark {
+  z-index: -5;
+  border: none;
+  background-color: #fff;
+  position: absolute;
+  top: 100px; 
+  right: 250px; 
+} */
+
+.pagebtn_prev, .pagebtn_next {
+  text-align: center;
+}
+
+.prevbutton p,.nextbutton p {
+  color:#4967FD;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.pbleft, .pbright {
+  font-size: 30px;
+  font-weight: 700;
+  border-radius: 100%;
+  border: 3px dotted white;
+  background-color: #4967FD;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+}
+
+.scrollbar_wrap {
+  background-color: #4967FD;
+  padding: 10px;
+  width: 1164px;
+  height: 95px;
+}
+
+.page_num {
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+  font-weight: bolder;
+  margin: 10px;
+}
+
+.scrollbar {
+  transform: translate(15%, 0);
+  overflow-x: scroll; 
+  white-space: nowrap; 
+  width: 900px; 
+}
+ 
+.scrollbar::-webkit-scrollbar {
+  width: 15px;  /* 스크롤바의 너비 */
+}
+ 
+.scrollbar::-webkit-scrollbar-thumb{
+  background: #4967FD; /* 스크롤바의 색상 */
+  border-radius: 10px;
+}
+
+.scrollbar::-webkit-scrollbar-track{
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.63);  /*스크롤바 뒷 배경 색상*/
+}
