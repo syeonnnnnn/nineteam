@@ -74,6 +74,15 @@ img {
   border-bottom: 1px solid #dadada;
 }
 
+.productpage {
+  display: flex;
+  margin-top: 10px;
+  height: auto;
+  border-top: 1px solid #dadada;
+  border-bottom: 1px solid #dadada;
+  position: relative;
+}
+
 .sidemain {
   position: fixed;
   border-right: 1px solid #4967fd;
@@ -115,7 +124,6 @@ img {
 .realmain {
   background-color: #4967fd;
   width: 1160px;
-  position: relative;
   left: 40px;
 }
 
@@ -208,6 +216,39 @@ button:hover {
   color: #fff;
   border: 1px solid slategray;
   border-radius: 5px;
+}
+
+.info {
+  position: absolute;
+  top: 30%;
+  right: 13%;
+  font-size: 32px;
+}
+
+.title1 {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.item1 {
+  padding-right: 20px;
+  font-size: 28px;
+}
+
+.title2 {
+  display: flex;
+}
+
+.item2 {
+  padding-right: 20px;
+  font-size: 28px;
+}
+
+.btngroup {
+  position: absolute;
+  bottom: 20%;
+  right: 10%;
+  margin: 20px;
 }
 
 span {
