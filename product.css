@@ -1,0 +1,199 @@
+html,
+body,
+form,
+button {
+  margin: 0;
+  padding: 0;
+  font-family: "Nanum Gothic Coding", monospace;
+}
+
+.wrap {
+  text-align: center;
+}
+
+.wrap-center {
+  width: 1200px;
+  display: inline-block;
+}
+
+.header {
+  display: flex;
+  height: 120px;
+}
+
+.header-title {
+  font-family: "Anton", sans-serif;
+  font-size: 20px;
+  text-align: left;
+  width: 100%;
+  margin-top: 23px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.member-box {
+  padding: 5px;
+  width: 100%;
+  text-align: right;
+}
+
+.member {
+  padding: 5px;
+  position: relative;
+  top: 80px;
+}
+
+.login {
+  right: 42px;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+.join {
+  right: -10px;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+.login:hover,
+.join:hover {
+  color: #ee4949;
+}
+
+.footer {
+  padding: 10px;
+  text-align: center;
+}
+/* --------------- */
+.productpage {
+  display: flex;
+  margin-top: 10px;
+  height: auto;
+  border-top: 1px solid #dadada;
+  border-bottom: 1px solid #dadada;
+  position: relative;
+}
+
+.book {
+  display: grid;
+  position: relative;
+}
+
+.container {
+  width: 400px;
+  height: 500px;
+  border: 1px solid slategrey;
+  margin: 30px;
+  margin-bottom: 60px;
+  border-radius: 10px;
+}
+
+.book button {
+  margin: 10px;
+  width: 90px;
+  height: 35px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  background-color: #009aff;
+  position: absolute;
+  bottom: 0%;
+  left: 38%;
+}
+
+.book button:hover {
+  background-color: #006bd5;
+  color: #fff;
+  border: 1px solid slategray;
+  border-radius: 5px;
+}
+
+.productinfo button {
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 0;
+  border: 1px solid #0083da;
+  color: #fff;
+  background-color: #009aff;
+}
+
+button:hover {
+  background-color: #006bd5;
+  color: #fff;
+  border: 1px solid slategray;
+  border-radius: 5px;
+}
+
+.info {
+  position: absolute;
+  top: 30%;
+  right: 13%;
+  font-size: 32px;
+}
+
+.title1 {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.item1 {
+  padding-right: 20px;
+  font-size: 28px;
+}
+
+.title2 {
+  display: flex;
+}
+
+.item2 {
+  padding-right: 20px;
+  font-size: 28px;
+}
+
+.btngroup {
+  position: absolute;
+  bottom: 20%;
+  right: 10%;
+  margin: 20px;
+}
+
+span {
+  vertical-align: middle;
+}
+
+svg {
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+}
+
+.shareimg {
+  width: 15px;
+  height: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+img {
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+  color: white;
+}
+
+#heart {
+  display: inline-block;
+}
+
+#heartfill {
+  display: none;
+}
