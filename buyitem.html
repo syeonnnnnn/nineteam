@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="buyitem.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="buybook">
+        <div class="price">결제 상품</div>
+        <hr />
+        <div class="bookname">
+          <img src="image/baemin.png" alt="배달의 민족" />
+          <div class="book">배달의 민족 설명서</div>
+        </div>
+        <hr />
+        <div class="price">
+          <div>가격</div>
+          <span>3000원</span>
+        </div>
+      </div>
+      <div class="payment">
+        <div class="select">결제수단</div>
+        <hr />
+        <div class="select">
+          <span>
+            <input type="radio" id="card" name="pay" checked />
+            <label for="card">신용카드</label>
+          </span>
+          <span>
+            <input type="radio" id="kakaopay" name="pay" />
+            <label for="kakaopay">카카오페이</label>
+          </span>
+          <span>
+            <input type="radio" id="bank" name="pay" />
+            <label for="bank">계좌이체</label>
+          </span>
+          <span>
+            <input type="radio" id="mobile" name="pay" />
+            <label for="mobile">휴대폰 결제</label>
+          </span>
+        </div>
+        <table>
+          <tr>
+            <th>카드종류</th>
+            <td>
+              <select name="card" id="card">
+                <option value="selectcard">카드를 선택해주세요.</option>
+                <option value="SHC">신한카드</option>
+                <option value="BCC">BC카드</option>
+                <option value="WRC">우리카드</option>
+                <option value="HNC">하나(외환)카드</option>
+                <option value="LTC">롯데카드</option>
+                <option value="SSC">삼성카드</option>
+                <option value="KOC">카카오뱅크</option>
+                <option value="HDC">현대카드</option>
+                <option value="KBC">KB(국민)카드</option>
+                <option value="NHC">NH(농협)카드</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <th>할부종류</th>
+            <td>
+              <select name="cardinfo" id="cardinfo" disabled="disabled">
+                <option value="payonce">일시불</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="lastcheck">
+        <div class="price">최종 결제정보</div>
+        <hr />
+        <div class="price">
+          <div>결제 금액</div>
+          <span>3000원</span>
+        </div>
+      </div>
+      <button>결제하기</button>
+    </div>
+  </body>
+</html>

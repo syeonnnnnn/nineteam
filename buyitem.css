@@ -1,0 +1,98 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  /* background-color: blue; */
+  font-size: 26px;
+  position: relative;
+}
+
+.buybook {
+  width: 1100px;
+  height: auto;
+  /* background-color: aqua; */
+  border: 1px solid black;
+  margin-top: 60px;
+}
+
+.bookname {
+  display: flex;
+  margin: 20px;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+.book {
+  margin-top: 35px;
+  margin-left: 10px;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.payment {
+  border: 1px solid black;
+  margin-top: 25px;
+}
+
+.select {
+  font-size: 20px;
+  margin: 15px;
+  margin-left: 10px;
+}
+
+.lastcheck {
+  border: 1px solid black;
+  margin-top: 25px;
+}
+
+button {
+  width: 250px;
+  height: 70px;
+  border-radius: 5px;
+  font-size: 20px;
+  border: none;
+  background-color: #009aff;
+  color: #fff;
+  position: absolute;
+  left: 39%;
+  margin-top: 40px;
+}
+
+select {
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+table {
+  border-top: 1px solid black;
+  width: 1100px;
+  padding: 20px;
+}
+
+th {
+  font-size: 20px;
+}
+
+select:focus {
+  border: 2px solid #009aff;
+  outline: none;
+}
