@@ -1,12 +1,11 @@
 
     <div class="pragmatic_header">
         <div>
-            <h1 class="pragmatic_logo">Pragmatic</h1>
+            <div class="header-title">
+                <h1>SO EASY</h1>
+            </div>
         </div>
-        <div>
-            <span>nav1</span>
-            <span>nav2</span>
-            <span>nav3</span>
+        <div style="text-align: right">
             {% if not user.is_authenticated %}
             <a href="{% url 'accountapp:login' %}?next={{ request.path }}">
                 <span>login</span>
@@ -16,5 +15,8 @@
                 <span>logout</span>
             </a>
             {% endif %}
+
         </div>
+
+
     </div>
