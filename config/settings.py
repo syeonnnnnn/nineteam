@@ -52,6 +52,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'accountapp',
+    'django_bootstrap5',
+    'ebooksapp'
 ]
 
 MIDDLEWARE = [
