@@ -10,9 +10,6 @@ from accountapp.forms import AccountUpdateForm
 
 # Create your views here.
 
-def hello_world(request):
-    return render(request, 'accountapp/hello_world.html')
-
 
 class AccountCreateView(CreateView):
     model = User
@@ -29,7 +26,7 @@ class AccountUpdateView(UpdateView):
     model = User
     context_object_name = 'target_user'
     form_class = AccountUpdateForm
-    success_url = reverse_lazy('accountapp:hello_world')
+    success_url = reverse_lazy('ebooksapp:ebooks')
     template_name = 'accountapp/update.html'
 
 class AccountDeleteView(DeleteView):
