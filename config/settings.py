@@ -149,3 +149,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 LOGIN_REDIRECT_URL = reverse_lazy('ebooksapp:ebooks')
 LOGOUT_REDIRECT_URL = reverse_lazy('accountapp:login')
+
+MEDIA = '/media/'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
