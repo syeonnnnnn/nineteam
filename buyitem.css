@@ -76,10 +76,10 @@ button {
 }
 
 select {
-  width: 200px;
+  width: 230px;
   height: 30px;
   border-radius: 5px;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 table {
@@ -95,4 +95,32 @@ th {
 select:focus {
   border: 2px solid #009aff;
   outline: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+  padding-left: 0;
+}
+
+#op2 {
+  display: none;
+}
+
+#op2 input {
+  width: 225px;
+  height: 30px;
+  padding: 0;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+hr {
+  background: black;
+  height: 1px;
+  border: 0;
 }

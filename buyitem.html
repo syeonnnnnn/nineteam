@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title></title>
     <link rel="stylesheet" href="buyitem.css" />
+    <script src="buyitem.js"></script>
   </head>
   <body>
     <div class="container">
@@ -25,52 +26,86 @@
       <div class="payment">
         <div class="select">결제수단</div>
         <hr />
-        <div class="select">
-          <span>
-            <input type="radio" id="card" name="pay" checked />
-            <label for="card">신용카드</label>
-          </span>
-          <span>
-            <input type="radio" id="kakaopay" name="pay" />
-            <label for="kakaopay">카카오페이</label>
-          </span>
-          <span>
-            <input type="radio" id="bank" name="pay" />
-            <label for="bank">계좌이체</label>
-          </span>
-          <span>
-            <input type="radio" id="mobile" name="pay" />
-            <label for="mobile">휴대폰 결제</label>
-          </span>
-        </div>
-        <table>
-          <tr>
-            <th>카드종류</th>
-            <td>
-              <select name="card" id="card">
-                <option value="selectcard">카드를 선택해주세요.</option>
-                <option value="SHC">신한카드</option>
-                <option value="BCC">BC카드</option>
-                <option value="WRC">우리카드</option>
-                <option value="HNC">하나(외환)카드</option>
-                <option value="LTC">롯데카드</option>
-                <option value="SSC">삼성카드</option>
-                <option value="KOC">카카오뱅크</option>
-                <option value="HDC">현대카드</option>
-                <option value="KBC">KB(국민)카드</option>
-                <option value="NHC">NH(농협)카드</option>
-              </select>
-            </td>
-          </tr>
-          <tr>
-            <th>할부종류</th>
-            <td>
-              <select name="cardinfo" id="cardinfo" disabled="disabled">
-                <option value="payonce">일시불</option>
-              </select>
-            </td>
-          </tr>
-        </table>
+        <ul>
+          <li class="select">
+            <span>
+              <input
+                type="radio"
+                onclick="opView()"
+                id="credit"
+                name="pay"
+                checked
+              />
+              <label for="card">신용카드</label>
+            </span>
+            <span>
+              <input type="radio" onclick="opView()" id="bankpay" name="pay" />
+              <label for="bank">계좌이체</label>
+            </span>
+            <!-- <span>
+              <input type="radio" onclick="opView()" id="kakaopay" name="pay" />
+              <label for="kakaopay">카카오페이</label>
+            </span> -->
+            <span>
+              <input type="radio" onclick="opView()" id="mobile" name="pay" />
+              <label for="mobile">휴대폰 결제</label>
+            </span>
+          </li>
+          <li id="op1">
+            <table>
+              <tr>
+                <th>카드종류</th>
+                <td>
+                  <select name="card" id="card">
+                    <option value="selectcard">카드를 선택해주세요.</option>
+                    <option value="SHC">신한카드</option>
+                    <option value="BCC">BC(비씨)카드</option>
+                    <option value="WRC">우리카드</option>
+                    <option value="HNC">하나(외환)카드</option>
+                    <option value="LTC">롯데카드</option>
+                    <option value="SSC">삼성카드</option>
+                    <option value="KOC">카카오뱅크</option>
+                    <option value="HDC">현대카드</option>
+                    <option value="KBC">KB(국민)카드</option>
+                    <option value="NHC">NH(농협)카드</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <th>할부종류</th>
+                <td>
+                  <select name="cardinfo" id="cardinfo" disabled="disabled">
+                    <option value="payonce">일시불</option>
+                  </select>
+                </td>
+              </tr>
+            </table>
+          </li>
+          <li id="op2">
+            <table>
+              <tr>
+                <th>입금자명</th>
+                <td>
+                  <input type="text" />
+                </td>
+              </tr>
+              <tr>
+                <th>입금하실 은행</th>
+                <td>
+                  <select name="bank" id="bank">
+                    <option value="SHB">신한은행</option>
+                    <option value="WRB">우리은행</option>
+                    <option value="HNB">하나은행</option>
+                    <option value="KOB">기업은행</option>
+                    <option value="HDB">제일은행</option>
+                    <option value="KBB">국민은행</option>
+                    <option value="NHB">농협은행</option>
+                  </select>
+                </td>
+              </tr>
+            </table>
+          </li>
+        </ul>
       </div>
       <div class="lastcheck">
         <div class="price">최종 결제정보</div>
